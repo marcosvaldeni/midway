@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success">New Recipe</button>
+  </div>
+</div>
+<hr/>
+<div class="row">
+  <div class="col-xs-12" *ngFor="let recipe of recipes">
+    <a href="" class="list-group-item clearfix my-3">
+      <div class="pull-left">
+        <h4 class="list-group-item-heading">Recipe Name</h4>
+        <p class="list-group-item-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Enim tempore
+          deleniti iusto?
+        </p>
+      </div>
+      <span class="pull-right">
+        <img
+          src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=500&h=600&dpr=1"
+          alt=""
+          class="img-responsive"
+          style="max-height: 50px"
+        />
+      </span>
+      <app-recipe-item />
+    </a>
+  </div>
+</div>
